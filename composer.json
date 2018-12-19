@@ -1,0 +1,28 @@
+{
+  "name": "maniakalen/migration",
+  "description": "Yii2 Migration extension module for exporting DB to migration",
+  "keywords": [
+    "PHP", "Yii2", "Migration"
+  ],
+  "license": "Open Software License (OSL 3.0)",
+  "type": "library",
+  "version": "1.0.1",
+  "authors": [
+    {
+      "name": "Petar Ivanov"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2" : ">=2.0.12"
+  },
+  "autoload": {
+    "psr-0": {
+      "maniakalen\\": "src/"
+    }
+  },
+  "archive": {
+    "exclude": ["vendor", "build.xml", "composer.lock"]
+  }
+}
