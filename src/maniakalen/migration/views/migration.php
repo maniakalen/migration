@@ -25,7 +25,12 @@ class <?= $className ?> extends Migration
      */
     public function safeUp()
     {
+        try {
 
+        } catch (\Exception $ex) {
+            return false;
+        }
+        return true;
     }
 
     /**
@@ -33,23 +38,11 @@ class <?= $className ?> extends Migration
      */
     public function safeDown()
     {
-        echo "<?= $className ?> cannot be reverted.\n";
+        try {
 
-        return false;
+        } catch (\Exception $ex) {
+            return false;
+        }
+        return true;
     }
-
-    /*
-    // Use up()/down() to run migration code without a transaction.
-    public function up()
-    {
-
-    }
-
-    public function down()
-    {
-        echo "<?= $className ?> cannot be reverted.\n";
-
-        return false;
-    }
-    */
 }
