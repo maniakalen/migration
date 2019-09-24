@@ -4,7 +4,7 @@
   "keywords": [
     "PHP", "Yii2", "Migration"
   ],
-  "license": "Open Software License (OSL 3.0)",
+  "license": "NPOSL-3.0",
   "type": "library",
   "authors": [
     {
